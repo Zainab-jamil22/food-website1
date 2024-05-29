@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie bar | website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/restaurant.png" alt="Food Icon" class="food-icon">
+            <h1 class="restaurant-name"><span>F</span>oodie <span>B</span>ar</h1>
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <button class="order-now" onclick="orderNow()">Order Now</button>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="hero-text">
+            <h1><span>W</span>elcome to Foodie Bar!</h1>
+            <p>Where exquisite flavors and exceptional service come together to create unforgettable dining experiences. !.</p>
+        </div>
+        <div class="hero-image" onclick="changeHeroImage()">
+            <img src="/image/b.avif" alt="Hero Image" id="heroImage">
+        </div>
+    </section>
+
+    <section id="menu" class="our-menu">
+        <h2>Our Menu</h2>
+        <div class="menu-cards">
+            <div class="menu-card" onclick="highlightCard(this)">
+                <img src="image/beaf-removebg-preview.png" alt="Menu Item 1">
+                <p><b>Beaf Burger</b></p>
+            </div>
+            <div class="menu-card" onclick="highlightCard(this)">
+                <img src="image/chicken-removebg-preview.png" alt="Menu Item 2">
+                <p><b>Chicken Burger</b></p>
+            </div>
+            <div class="menu-card" onclick="highlightCard(this)">
+               <img src="image/xin-removebg-preview.png" alt="Menu Item 2">
+               <p><b>Zinger Burger</b></p>
+           </div>
+           <div class="menu-card" onclick="highlightCard(this)">
+               <img src="image/sand-removebg-preview.png" alt="Menu Item 2">
+               <p><b>Sandwich</b></p>
+           </div>
+           <div class="menu-card" onclick="highlightCard(this)">
+               <img src="image/pasta-removebg-preview.png" alt="Menu Item 2">
+               <p><b>Pasta</b></p>
+           </div>
+           <div class="menu-card" onclick="highlightCard(this)">
+               <img src="image/dump-removebg-preview.png" alt="Menu Item 2">
+               <p><b>Dumplings</b></p>
+           </div>
+           <div class="menu-card" onclick="highlightCard(this)">
+               <img src="image/salad-removebg-preview.png" alt="Menu Item 2">
+               <p><B>Salad</B></p>
+           </div>
+           <div class="menu-card" onclick="highlightCard(this)">
+               <img src="image/pizza-removebg-preview (2).png" alt="Menu Item 2">
+               <p><b>Pizza</b></p>
+           </div>
+           <div class="menu-card" onclick="highlightCard(this)">
+               <img src="image/st-removebg-preview.png" alt="Menu Item 2">
+               <p><b>Beaf Steak</b></p>
+           </div>
+           <div class="menu-card" onclick="highlightCard(this)">
+               <img src="image/sushi-removebg-preview.png" alt="Menu Item 2">
+               <p><b>Sushi</b></p>
+           </div>
+           <div class="menu-card" onclick="highlightCard(this)">
+               <img src="image/sg-removebg-preview.png" alt="Menu Item 2">
+               <p><b>Shawarma</b></p>
+           </div>
+            <!-- Add more menu cards here -->
+        </div>
+    </section>
+
+    <section id="about" class="about-us">
+        <div class="about-image" onclick="changeAboutImage()">
+            <img src="image/about1.png" alt="About Us" id="aboutImage">
+
+        </div>
+        <div class="about">
+        <div class="about-text">
+            <h2>About Us</h2>
+            <p id="typewriter"></p>
+        </div>
+     </div>
+    </section>
+
+    <section id="contact" class="contact-us">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+ 
+    </footer>
+    <div class="end">
+    <footer class="footer-distributed">
+    
+          <div class="footer-left">
+    
+            <h3>Foodie<span>Bar</span></h3>
+    
+            <p class="footer-links">
+              <a href="#" class="link-1">Home</a>
+              
+              <a href="#">Menu</a>
+            
+              <a href="#">Pricing</a>
+            
+              <a href="#">About</a>
+              
+              <a href="#">Faq</a>
+              
+              <a href="#">Contact</a>
+            </p>
+    
+            <p class="footer-company-name">FoodieBar©2024</p>
+          </div>
+    
+          <div class="footer-center">
+    
+            <div>
+              <i class="fa fa-map-marker"></i>
+              <p><span>phase 7</span> Karachi , Pakistan</p>
+            </div>
+    
+            <div>
+              <i class="fa fa-phone"></i>
+              <p>+92 325xxxxxxx</p>
+            </div>
+    
+            <div>
+              <i class="fa fa-envelope"></i>
+              <p><a href="mailto:support@company.com">FooodieBar@resturant.com</a></p>
+            </div>
+    
+          </div>
+    
+          <div class="footer-right">
+    
+            <p class="footer-company-about">
+              <span>About the resturant!</span>
+              Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+            </p>
+    
+            
+    
+          </div>
+        </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
